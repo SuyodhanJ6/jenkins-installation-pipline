@@ -16,9 +16,10 @@ which git ---> set git path in Jenkins
 chmod 777 /var/run/docker.sock
 
 ## UBUNTU
-``sudo apt update
-sudo apt install docker.io
-sudo usermod -aG docker $USER
+``
+1. sudo apt update
+2. sudo apt install docker.io
+3. sudo usermod -aG docker $USER
 id $USER
 newgrp docker
 sudo systemctl enable docker.service
